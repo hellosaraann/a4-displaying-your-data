@@ -19,6 +19,7 @@ document.getElementById('BtnDemosthenes').addEventListener('click', function(){
 });
 
 var greatSpeeches = [
+  //array of featured speech objects with corresponding properties
   {
     "author" : "Churchill",
     "year"   : "1940",
@@ -39,8 +40,9 @@ var greatSpeeches = [
   }
 ];
 
-var differenceInYears = greatSpeeches[1].year-greatSpeeches[0].year;
+var differenceInYears = greatSpeeches[1].year-greatSpeeches[0].year; //difference in years between Churchill's and Ghandi's featured speeches
 
 window.onload = function() {
   console.log("Ghandi's speech and Churchill's speech are " + differenceInYears + " years apart.")
+  //logs in console once entire page has loaded
 };
